@@ -1,0 +1,14 @@
+nav {
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include mobile {
+    padding: 2rem 1.5rem;
+  }
+
+  img {
+    height: 2rem;
+  }
+}
