@@ -3,6 +3,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 
   @include mobile {
     padding: 2rem 1.5rem;

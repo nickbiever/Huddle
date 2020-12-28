@@ -3,3 +3,18 @@
 @import "./utilities/variables";
 @import "./components/nav";
 @import "./components/buttons";
+@import "./components/hero";
+
+.background-image {
+  background-image: url("../img/bg-hero-desktop.svg");
+  padding-bottom: 4rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-color: $pale-cyan;
+
+  @include mobile {
+    background-image: url("../img/bg-hero-mobile.svg");
+  }
+}

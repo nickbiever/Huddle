@@ -28,6 +28,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
@@ -72,5 +73,70 @@ nav img {
 .btn-pink {
   background: #ff52bf;
   color: white;
+}
+
+.hero {
+  padding: 0rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 0rem 1.5rem;
+    margin-top: 4rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.hero .text {
+  width: 40%;
+}
+
+@media (max-width: 768px) {
+  .hero .text {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.hero .text p {
+  margin: 2rem 0;
+}
+
+.hero img {
+  height: 25rem;
+}
+
+@media (max-width: 768px) {
+  .hero img {
+    width: 100%;
+    height: auto;
+    margin-top: 4rem;
+  }
+}
+
+.background-image {
+  background-image: url("../img/bg-hero-desktop.svg");
+  padding-bottom: 4rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-color: #ebfbff;
+}
+
+@media (max-width: 768px) {
+  .background-image {
+    background-image: url("../img/bg-hero-mobile.svg");
+  }
 }
 /*# sourceMappingURL=style.css.map */

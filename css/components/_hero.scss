@@ -1,0 +1,35 @@
+.hero {
+  padding: 0rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include mobile {
+    padding: 0rem 1.5rem;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+  }
+
+  .text {
+    width: 40%;
+
+    @include mobile {
+      width: 100%;
+      text-align: center;
+    }
+
+    p {
+      margin: 2rem 0;
+    }
+  }
+
+  img {
+    height: 25rem;
+
+    @include mobile {
+      width: 100%;
+      height: auto;
+      margin-top: 4rem;
+    }
+  }
+}
