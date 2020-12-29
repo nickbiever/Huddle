@@ -124,6 +124,95 @@ nav img {
   }
 }
 
+.cards {
+  padding: 2rem 4rem;
+  margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    padding: 0rem 1.5rem;
+  }
+}
+
+.card {
+  padding: 3rem;
+  padding-left: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+  border-radius: 16px;
+  -webkit-box-shadow: 0 0 32px -16px #808d99;
+          box-shadow: 0 0 32px -16px #808d99;
+}
+
+@media (max-width: 768px) {
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    padding: 4rem;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    text-align: center;
+  }
+}
+
+.card .card-info {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .card .card-info {
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+.card .card-info h2 {
+  font-size: 1.25rem;
+}
+
+.card .card-info p {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  color: #808d99;
+}
+
+@media (max-width: 768px) {
+  .card .card-info p {
+    font-size: 1.125rem;
+  }
+}
+
+.card img {
+  height: 15rem;
+}
+
+@media (max-width: 768px) {
+  .card img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;
+  }
+}
+
+.image-to-top {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
 .background-image {
   background-image: url("../img/bg-hero-desktop.svg");
   padding-bottom: 4rem;
