@@ -1,5 +1,5 @@
 .cards {
-  padding: 2rem 4rem;
+  padding: 2rem 8rem;
   margin-top: 4rem;
 
   @include mobile {
@@ -54,6 +54,8 @@
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 4rem;
+      width: 100%;
+      height: auto;
     }
   }
 }

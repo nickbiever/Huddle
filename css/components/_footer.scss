@@ -1,0 +1,111 @@
+footer {
+  background-color: $dark-cyan;
+  color: $pale-cyan;
+  padding: 9.375rem 8rem 4rem 8rem;
+
+  @include mobile {
+    padding: 9.375rem 1.5rem 4rem 1.5rem;
+  }
+
+  a {
+    color: $pale-cyan;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .logo {
+    filter: brightness(0) invert(1);
+    height: 2rem;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    color: $pale-cyan;
+
+    @include mobile {
+      flex-direction: column;
+    }
+
+    .about {
+      width: 25%;
+
+      @include mobile {
+        width: 100%;
+      }
+
+      img {
+        height: 1rem;
+        float: left;
+        margin-top: 0.25rem;
+      }
+
+      p {
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+        font-size: 0.9rem;
+      }
+    }
+
+    .links {
+      width: 25%;
+      text-align: left;
+      font-size: 0.9rem;
+
+      @include mobile {
+        width: 100%;
+        margin-top: 2rem;
+      }
+
+      td {
+        padding: 0.5rem 0;
+
+        @include mobile {
+          display: block;
+        }
+      }
+    }
+
+    .social-media {
+      width: 25%;
+
+      @include mobile {
+        width: 100%;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+      }
+
+      i {
+        border: 1px solid $pale-cyan;
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+        text-align: center;
+        line-height: 2rem;
+        vertical-align: middle;
+        font-size: 1rem;
+        margin-right: 0.5rem;
+
+        &:hover {
+          border-color: $pink;
+          color: $pink;
+        }
+      }
+    }
+  }
+
+  .copy-right {
+    text-align: right;
+    font-size: 0.9rem;
+
+    @include mobile {
+      text-align: center;
+      margin-top: 2rem;
+    }
+  }
+}
